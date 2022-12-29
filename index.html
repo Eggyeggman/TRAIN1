@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene background="color:gray">
+
+    <a-camera wasd-controls-enabled="false" position="0 8 20"></a-camera>
+
+    <!-------------------------------------------Asset Management------------------------------------------->
+    <a-assets>      
+
+      <!--Add Code Here-->
+      <a-asset-item id = "lamp-obj" src = "Model/tinker.obj"></a-asset-item>
+      <a-asset-item id = "lamp-mtl" src = "Model/obj.mtl"></a-asset-item>
+
+    </a-assets>
+    
+    
+    <!--------------------------------------OBJ Models----------------------------------------------------------->   
+  
+    <!--Add code here-->
+    <a-entity obj-model="obj:#lamp-obj;mtl:#lamp-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="-90 0 0"></a-entity>
+
+    
+  </a-scene>
+</body>
+
+</html>
